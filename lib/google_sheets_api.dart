@@ -11,7 +11,7 @@ class GoogleSheetsApi {
   ''';
 
   // set up & connect to the spreadsheet
-  static final _spreadsheetId = 'PUT YOUR SPREADSHEET ID HERE';
+  static final _spreadsheetId = 'https://docs.google.com/spreadsheets/d/1u79cZkeFsdns5NJG_SHiAVH7xb5thFo5exEXWyNruJQ/edit?usp=sharing';
   static final _gsheets = GSheets(_credentials);
   static Worksheet? _worksheet;
 
@@ -22,7 +22,7 @@ class GoogleSheetsApi {
 
   // initialise the spreadsheet!
   Future init() async {
-    final ss = await _gsheets.spreadsheet(_spreadsheetId);
+    final ss = await _gsheets.spreadsheet(_https://docs.google.com/spreadsheets/d/1u79cZkeFsdns5NJG_SHiAVH7xb5thFo5exEXWyNruJQ/edit?usp=sharing);
     _worksheet = ss.worksheetByTitle('Worksheet1');
     countRows();
   }
